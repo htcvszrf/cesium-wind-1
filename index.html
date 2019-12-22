@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Wind animation on Cesium globe</title>
+    <style>
+        .fullSize {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+        #wind{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cesium@1.64.0/Build/Cesium/Widgets/widgets.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cesium@1.64.0/Build/Cesium/Cesium.js"></script>
+    <script src="globe.js"></script>
+    <script src="Windy.js"></script>
+    <script src="index.js"></script>
+  <body>
+    <div id="cesiumContainer" class="fullSize">
+    </div>
+    <canvas id="wind"></canvas>
+  </body>
+</html>
